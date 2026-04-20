@@ -22,13 +22,9 @@
 
     .container { width: 90%; max-width: 1100px; margin: auto; }
 
-    header {
-      padding: 10px 0;
-    }
+    header { padding: 10px 0; }
 
-    header img {
-      width: 120px;
-    }
+    header img { width: 120px; }
 
     .btn {
       display: inline-block;
@@ -73,6 +69,13 @@
       padding: 60px 0;
     }
 
+    .how h2 {
+      color: white;
+      font-size: 2.2rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
     .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -85,6 +88,18 @@
       border-radius: 14px;
       text-align: center;
       box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+
+    .card .link-text {
+      text-decoration: underline;
+      font-weight: bold;
     }
 
     .card img {
@@ -93,7 +108,7 @@
       transform: translateY(-20px);
     }
 
-    /* TESTIMONIAL (Enhanced) */
+    /* TESTIMONIAL */
     .testimonial {
       padding: 100px 40px;
       text-align: center;
@@ -153,7 +168,7 @@
 
   <!-- HEADER -->
   <header class="container fade">
-    <img src="White Logo.png" alt="Logo">
+    <img src="White logo.png" alt="Logo">
   </header>
 
   <!-- HERO -->
@@ -169,20 +184,24 @@
 
   <!-- HOW -->
   <section id="how" class="how container">
-    <h2 class="fade" style="text-align:center; margin-bottom:30px;">How it works</h2>
+    <h2 class="fade">How it works</h2>
     <div class="cards">
-      <div class="card fade">
+
+      <div class="card fade" onclick="window.open('https://automattic.pxf.io/c/7212458/1919834/22744','_blank')">
         <img src="Wordpress logo.png" alt="WordPress">
-        <p><strong>1)</strong> Click here to purchase a $25/month hosting plan through WordPress</p>
+        <p><strong>1)</strong> <span class="link-text">Click here</span> to purchase a $25/month hosting plan through WordPress</p>
       </div>
+
       <div class="card fade">
         <img src="Email.png" alt="Email">
         <p><strong>2)</strong> Send an email to EZTrainerSitez@Gmail.com with your WordPress login credentials</p>
       </div>
+
       <div class="card fade">
         <img src="Questions.png" alt="Questions">
         <p><strong>3)</strong> We'll send you a brief questionnaire (4 quick questions)<br><br>And that's it! Once you respond, we'll launch your site in about an hour</p>
       </div>
+
     </div>
   </section>
 
@@ -202,12 +221,12 @@
     <div>
       <h2>Veteran Owned & Operated</h2>
       <p>
-        EZTrainerSites is Veteran owned and operated. Our mission is to empower personal trainers to change lives. Awin
+        EZTrainerSites is Veteran owned and operated. Our mission is to empower personal trainers to change lives.
       </p>
       <a href="#how" class="btn">Launch my Site (It only takes 5 minutes)</a>
     </div>
     <div>
-      <img src="Veteran Owned.png" alt="Veteran Owned">
+      <img src="Veteran owned.png" alt="Veteran owned">
     </div>
   </section>
 
